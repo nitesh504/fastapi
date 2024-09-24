@@ -5,10 +5,8 @@ import logging
 
 app = FastAPI()
 
-# Set up logging
 logging.basicConfig(level=logging.INFO)
 
-# Allow CORS for specific origins
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["http://localhost:3002"],  
